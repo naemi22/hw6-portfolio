@@ -1,0 +1,246 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container {
+  z-index: 1;
+  perspective: 2000px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.2); 
+  transform-origin: center;
+}
+
+::selection {
+  background-color: #0047AB; 
+  color: #edf18d;
+}
+
+/* TEXT STYLING */
+#title h1 {
+  color: #0047AB;          
+  margin: 10px 0;          
+  padding: 0;              
+  padding-top: 10px;     
+  font-size: 40px;     
+}
+
+/* Intro Text Alignment and Spacing */
+.intro-container, .intro-why-website-container {
+  width: 90%;          
+  margin: 0 auto;         
+  padding: 0;             
+}
+
+.intro-text ul{
+  font-size: 25px;
+}
+
+.intro-text ul,
+.intro-why-website-text ul {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-why-website-text{
+  font-size: 20px;
+}
+
+.intro-text, .intro-why-website-text {
+  text-align: left;     
+  margin-top: 5px;       
+  margin-bottom: 5px;    
+  line-height: 1.4;      
+}
+
+/* h2 Headings: left aligned with some padding */
+h2 {
+  text-align: left;
+  padding-left: 80px;   
+  margin: 20px 0 10px 0;   
+}
+
+/* EXISTING WEBPAGE SCREENSHOT STYLING */
+#existing-website-photos-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* EXISTING WEBPAGE SCREENSHOT STYLING */
+.photo-box {
+  flex: 0 0 calc(33.333% - 20px); 
+  background-color: #0047AB;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.photo-box figcaption {
+  padding-bottom: 10px;
+}
+
+.photo-box figure {
+  margin: 0;
+}
+
+/* Fixed height with object-fit: contain to display the full screenshot */
+.photo-box img {
+  width: 100%;
+  height: 300px;  
+  object-fit: contain;
+  display: block;
+}
+
+/* Container to hold the three boxes side by side */
+.issues-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Each box styled as a square */
+.issue-box {
+  flex: 0 0 calc(33.333% - 20px);
+  background-color: #edf18d;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  aspect-ratio: 1 / 1;
+}
+
+.issue-box h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.issue-box p {
+  text-align: left;
+}
+
+.issue-box ul {
+  list-style-type: disc;
+  margin-right: 10px;   
+  margin-left: 10px;
+  padding-left: 0;
+}
+
+#webAIM-WAVE-discussion-container h3,
+#visual-design-style-guide-container h3 {
+  color: black;          
+  margin: 10px 0;          
+  padding: 0;
+  padding-left: 80px;
+  padding-right: 80px;    
+  padding-top: 10px;                   
+  font-size: 17px;     
+}
+
+.waive-box {
+  flex: 0 0 calc(25% - 20px); 
+  background-color: #edf18d;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  aspect-ratio: 1 / 1; 
+}
+
+.waive-box h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.waive-box ul {
+  list-style-type: disc;
+  margin-right: 10px;   
+  margin-left: 10px;
+  padding-left: 0;
+}
+
+.waive-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+#visual-design-style-guide {
+  width: 82%;
+  border: 3px solid #0047AB;
+  display: block; 
+  margin: 0 auto;
+}
+
+.figma-link, .mockup-link {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0047AB;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 80px;   
+}
+
+.figma-link ::after {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0047AB;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.mockup-link ::after {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0047AB;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.figma-link:hover {
+  transform: scale(1.1);   
+  text-decoration: underline;
+}
+
+.mockup-link:hover {
+  transform: scale(1.1);     
+  text-decoration: underline; 
+}
+
+#present-redesign-container h4 {
+  color: black;          
+  margin: 10px 0;          
+  padding: 0;
+  padding-left: 80px;  
+  padding-top: 10px;                   
+  padding-bottom: 80px;     
+  font-size: 17px;     
+}
+
+#figma-designs-container,
+#present-redesign-container {
+  width: 100%;
+  margin: 0 auto;
+}
