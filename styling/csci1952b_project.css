@@ -200,7 +200,7 @@ height: 35px;
 }
 
 .menu-label {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 25px;
   line-height: 38px;
@@ -280,7 +280,7 @@ h2 {
 h3 {
   text-align: left;
   padding-left: 80px;
-  margin: 20px 50px 10px 0; 
+  padding-right: 80px;
 }
 
 
