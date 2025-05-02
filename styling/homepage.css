@@ -100,6 +100,7 @@ body {
   position: absolute;
   top: 20px;
   right: 40px;
+  margin-top: 40px;
 }
 
 @media (max-width: 830px) {
@@ -234,6 +235,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: nowrap;
+  margin-top: 60px;
 }
 
 #my-logo-image img {
@@ -416,4 +418,3 @@ body {
 .project-container:hover .project-gallery-item {
   transform: scale(1.05);
 }
-

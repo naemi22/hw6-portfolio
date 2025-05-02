@@ -48,33 +48,33 @@
       </div>
     </div>
 
-    <div id="top-area-container">
-      <div id="menu-items">
-        <a href="index.html" class="main-menu-link">
-          <div id="work-button-container" class="main-menu-button">
-            <div class="arrow"></div>
-            <span class="menu-label">work</span>
-          </div>
-        </a>
+    <div id="menu-items" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="main-menu-link" aria-current="page">
+        <div id="work-button-container" class="main-menu-button">
+          <div class="arrow"></div>
+          <span class="menu-label">work</span>
+        </div>
+      </a>
+    
+      <a href="play.html" class="main-menu-link">
+        <div id="play-button-container" class="main-menu-button">
+          <div class="arrow"></div>
+          <span class="menu-label">play</span>
+        </div>
+      </a>
+    
+      <a href="about_me.html" class="main-menu-link">
+        <div id="about-me-button-container" class="main-menu-button">
+          <div class="arrow"></div>
+          <span class="menu-label">about</span>
+        </div>
+      </a>
+    </div>
+    
 
-        <a href="play.html" class="main-menu-link">
-          <div id="play-button-container" class="main-menu-button">
-            <div class="arrow"></div>
-            <span class="menu-label">play</span>
-          </div>
-        </a>
-
-        <a href="about_me.html" class="main-menu-link">
-          <div id="about-me-button-container" class="main-menu-button">
-            <div class="arrow"></div>
-            <span class="menu-label">about</span>
-          </div>
-        </a>
-      </div>
-
-      <div id="about-intro-items">
+      <div id="about-intro-items" aria-label="Introduction section" role="region">
         <div id="my-logo-image">
-          <img src="./assets/earth_logo.png" alt="Logo Placeholder" />
+          <img src="./assets/earth_logo.png" alt="Earth logo, symbolizing Naemi Ditiatkovsky's personal brand" />
         </div>
       
         <div id="written-info-container">
@@ -84,68 +84,66 @@
       
           <div id="my-intro-text">
             <h2 class="greeting">Hi~ I’m an aspiring UX Researcher exploring the social impact of design in web applications!</h2>
-          
+      
             <p class="bio-detail">
               As a senior 
-              <a href="https://www.brown.edu/">@ Brown University</a> double majoring in 
-              <a href="https://ibes.brown.edu/">Environmental Science</a> and 
-              <a href="https://cs.brown.edu/">Computer Science</a>,
+              <a href="https://www.brown.edu/" aria-label="Link to Brown University homepage">@ Brown University</a> double majoring in 
+              <a href="https://ibes.brown.edu/" aria-label="Link to Brown’s Institute at IBES Environmental Science page">Environmental Science</a> and 
+              <a href="https://cs.brown.edu/" aria-label="Link to Brown’s Computer Science department homepage">Computer Science</a>,
               I mainly:
             </p>
-            <ul class="custom-bullets">
+            <ul class="custom-bullets" aria-label="List of professional focus areas">
               <li>Investigating the ethics and social dynamics of digital systems through UX research</li>
               <li>Designing accessible, visually compelling interfaces for social media and public art organizations</li>
             </ul>
           </div>          
         </div>
       </div>
-    </div>
-
-    <div id="projects-title">
-      <h2>Click to find out more about my projects here:</h2>
-    </div>
-
-    <div id="project-gallery">
-      <a href="/hw6-portfolio/accessible_components.html" class="project-link">
-        <div class="project-container">
-          <img src="./assets/accessible_cover.png" alt="Accessible Components Case Study Cover Page" class="project-gallery-item">
-          <div class="overlay">
-            <div class="project-title">Accessible Components - Radio Buttons Research</div>
+      
+      <div id="projects-title" aria-label="Projects section heading" role="heading" aria-level="2">
+        <h2>Click to find out more about my projects here:</h2>
+      </div>
+      
+      <div id="project-gallery" aria-label="Project gallery" role="region">
+        <a href="/hw6-portfolio/accessible_components.html" class="project-link" aria-label="Accessible Components Radio Buttons Case Study">
+          <div class="project-container">
+            <img src="./assets/accessible_cover.png" alt="Cover for Accessible Components Case Study" class="project-gallery-item">
+            <div class="overlay">
+              <div class="project-title">Accessible Components - Radio Buttons Research</div>
+            </div>
           </div>
-        </div>
-      </a>
-
-      <a href="/hw6-portfolio/personas_storyboarding.html" class="project-link">
-        <div class="project-container">
-          <img src="./assets/personas_cover.png" alt="Personas and Storyboarding Case Study Cover Page" class="project-gallery-item">
-          <div class="overlay">
-            <div class="project-title">Storyboarding and Drawing Personas - Self Checkout Stations at Libraries</div>
+        </a>
+      
+        <a href="/hw6-portfolio/personas_storyboarding.html" class="project-link" aria-label="Personas and Storyboarding Case Study">
+          <div class="project-container">
+            <img src="./assets/personas_cover.png" alt="Cover for Personas and Storyboarding Case Study" class="project-gallery-item">
+            <div class="overlay">
+              <div class="project-title">Storyboarding and Drawing Personas - Self Checkout Stations at Libraries</div>
+            </div>
           </div>
-        </div>
-      </a>
-
-      <a href="/hw6-portfolio/responsive_redesign.html" class="project-link">
-        <div class="project-container">
-          <img src="./assets/responsive_cover.png" alt="Responsive Redesign Case Study Cover Page" class="project-gallery-item">
-          <div class="overlay">
-            <div class="project-title">Re-Designing for Responsiveness - Akadamie Der Kunste Berlin</div>
+        </a>
+      
+        <a href="/hw6-portfolio/responsive_redesign.html" class="project-link" aria-label="Responsive Redesign Case Study">
+          <div class="project-container">
+            <img src="./assets/responsive_cover.png" alt="Cover for Responsive Redesign Case Study" class="project-gallery-item">
+            <div class="overlay">
+              <div class="project-title">Re-Designing for Responsiveness - Akadamie Der Kunste Berlin</div>
+            </div>
           </div>
-        </div>
-      </a>
-
-      <a href="/hw6-portfolio/csci1952b_project.html" class="project-link">
-        <div class="project-container">
-          <img src="./assets/cs1952b_cover.png" alt="Pinterest and Ethical Filtering Case Study Cover Page" class="project-gallery-item">
-          <div class="overlay">
-            <div class="project-title">Ethical UI Design - Pinterest's Body Type Toggles</div>
+        </a>
+      
+        <a href="/hw6-portfolio/csci1952b_project.html" class="project-link" aria-label="Ethical UI Design Pinterest Case Study">
+          <div class="project-container">
+            <img src="./assets/cs1952b_cover.png" alt="Cover for Ethical UI Design Pinterest Case Study" class="project-gallery-item">
+            <div class="overlay">
+              <div class="project-title">Ethical UI Design - Pinterest's Body Type Toggles</div>
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
-
-
-    <div id="back-top-section">
-        <a href="#top-moving-banner">Back to Top</a>
-    </div>
+        </a>
+      </div>
+      
+      <div id="back-top-section">
+        <a href="#top-moving-banner" aria-label="Back to top of page">Back to Top</a>
+      </div>      
   </body>
 </html>
