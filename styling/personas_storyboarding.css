@@ -1,0 +1,452 @@
+html, body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+::selection {
+  background-color: #e4013a; 
+  color: white;
+}
+
+#project-summary {
+  background-color: #f297bf;
+  border-left: 5px solid #e4013a;
+  padding: 10px 20px;
+  margin: 10px auto 30px auto;
+  width: 90%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ---------- Headings Styling Update ---------- */
+h1 {
+  font-size: 48px;
+  margin: 40px 0 10px 0;
+  padding-left: 20px;
+  text-align: left;
+  color: black;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 20px 0 10px 0; 
+  padding-left: 20px;
+  text-align: left;
+  color: black;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+  padding-left: 20px;
+  text-align: left;
+  color: black;
+}
+
+#title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 50px;
+  
+}
+
+#title h1 {
+  margin: 0;
+  padding: 0 0 5px 20px; 
+  font-size: 42px;
+  text-align: left;
+}
+
+#narrative-starter h2 {
+  margin: 0;
+  padding: 0 20px 10px 20px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+/* ------------------- PAGE NAVIGATION BUTTONS ------------------- */
+
+#page-navigation-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 50px;
+}
+
+#page-navigation-buttons > div {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#page-navigation-buttons ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+#page-navigation-buttons li {
+  margin: 0;
+}
+
+#page-navigation-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f297bf; 
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 2px solid black;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#page-navigation-buttons a:hover {
+  background-color: #f297bf;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+}
+
+#back-top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+#back-top-section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f297bf;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 2px solid black;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#back-top-section  a:hover {
+  background-color: #f297bf;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+}
+
+/* ------------------- TOP MOVING BANNER ------------------- */
+#top-moving-banner {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  background: #e4013a;
+  display: flex;
+  align-items: center; 
+}
+
+.banner-texts {
+  display: flex;
+  align-items: center;
+  gap: 61px;
+  position: absolute;
+  white-space: nowrap;
+  animation: moveBanner 20s linear infinite;
+}
+
+.banner-texts span {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  height: 35px;
+}
+
+@keyframes moveBanner {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ------------------- TOP MENU BAR ------------------- */
+#top-area-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+}
+
+#menu-items {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.main-menu-link {
+  text-decoration: none; 
+  color: inherit; 
+  display: inline-block;  
+}
+
+.main-menu-button {
+  width: 124px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.arrow {
+  width: 30px; 
+  height: 2px; 
+  background-color: black; 
+  transform: rotate(315deg);
+  margin-right: 8px; 
+  position: relative;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -4px; 
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+}
+
+.menu-label {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-button:hover .arrow {
+  background-color: #e4013a; 
+}
+
+.main-menu-button:hover .arrow::after {
+  border-top-color: #e4013a; 
+  border-right-color: #e4013a;
+}
+
+.main-menu-button:hover .menu-label {
+  color: #e4013a; 
+  font-weight: 500; 
+}
+
+/* ------------------- MAIN CONTENT WRAPPER ------------------- */
+.main-content {
+  max-width: 1300px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ------------------- INTERVIEW QUESTIONS/ANSWERS ------------------- */
+
+#interviewquestions h3:last-of-type {
+  margin-bottom: 10px; 
+}
+
+.circle-answers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.question-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 260px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('../assets/personas_storyboarding/Background_Box.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  color: black;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.question-block h3 {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.question-block ul {
+  padding: 0 15px;
+  list-style-position: inside;
+  margin: 0;
+}
+
+/* ------------------- CIRCLE SECTION ------------------- */
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.intro-text,
+.info-text {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-text {
+  width: 450px;
+  height: 450px;
+  background-color: #f297bf;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: left;
+  position: relative;
+  top: -80px;
+  left: -50px;
+}
+
+.info-text {
+  width: 600px;
+  height: 600px;
+  background-color: #e4013a;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  left: -20px;
+}
+
+.info-text ul {
+  list-style: inside;
+  text-align: left;
+  padding: 0;
+  margin-left: 25px;
+  font-size: 30px;
+  line-height: 1.6;
+}
+
+.info-text li {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-left: 15px;
+}
+
+/* ------------------- PHOTO/IMG ------------------- */
+
+#empathymaps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+#empathymaps h2,
+#empathymaps h3 {
+  width: 100%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+#empathymaps h3:last-of-type,
+#Storyboard h3:last-of-type {
+  margin-bottom: 30px; 
+}
+
+.persona-map {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#User_1_Persona,
+#User_2_Persona {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
+
+#Storyboard, 
+#Interface_Annotation {
+  width: 100%;
+  max-width: 1000px; 
+  height: auto;
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+/* ---------- Highlight Boxes ---------- */
+.highlight-box {
+  background-color: #f297bf;
+  border-left: 5px solid #e4013a;
+  padding: 20px 30px;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.highlight-box ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.highlight-box p {
+  margin: 0 0 10px 0;
+}

@@ -1,0 +1,280 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Studio</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styling/personas_storyboarding.css" /> 
+  </head>
+
+
+  <!-- WEBSITE STRUCTURE -->
+  <body>
+    <div id="top-moving-banner">
+      <div class="banner-texts">
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        
+        <!-- DUPLICATE set -->
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+
+        <!-- DUPLICATE set -->
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+      </div>
+    </div>
+
+    <div id="top-area-container">
+      <div id="menu-items">
+        <a href="homepage.html" class="main-menu-link">
+          <div id="work-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">work</span>
+          </div>
+        </a>
+
+        <a href="about_me.html" class="main-menu-link">
+          <div id="play-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">play</span>
+          </div>
+        </a>
+
+        <a href="about_me.html" class="main-menu-link">
+          <div id="about-me-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">about</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <!-- START OF CASE STUDY -->
+      <div id="title">
+        <h1>From Scan to Story: Rethinking Library Interfaces</h1>
+      </div>
+      
+      <div class="intro-section">
+        <div id="project-summary" class="highlight-box">
+          <p><strong>Role:</strong> UX researcher, User Testing Lead</p>
+          <p><strong>Skills:</strong> User interviews & synthesis, User Journey Mapping</p>
+          <p><strong>Timeline:</strong> February - March 2025</p>
+        </div>
+      </div>
+
+      <div class="circle-container">
+        <div id="narrative-starter">
+          <h2>
+            I love checking out books at the library, but more than once I’ve asked myself:
+            <em>Why is this so difficult when no librarian is there to help?</em>
+            <em>Why is the self checkout station at a library so much harder than self checkout in the grocery store?</em>
+          </h2>
+        </div>
+
+
+        <!-- Pink Circle for Intro -->
+        <div class="intro-container">
+          <div class="intro-text">
+            <ul>
+              <em>What happens when students interact with technology that’s supposed to make their lives easier—but doesn’t?</em>
+            </ul>
+            <ul>
+              This exploration investigates the usability and intuitiveness of self-checkout stations like Brown University’s Rockefeller Library.
+            </ul>
+          </div>
+        </div>
+
+        <!-- Red Circle for Key Insights -->
+        <div class="info-circle">
+          <div class="info-text">
+            <ul>Through this design research I will:<ul>
+            <ul>
+              <li>Step into user’s shoes and behaviors</li>
+              <li>Observe and interview users’ on their experiences</li>
+              <li>Illustrate user interactions with Personas</li>
+              <li>Narrate users’ end-to-end journey through storyboarding</li>
+              <li>Grow my skills as a UX Researcher with different tools to map users' journeys and pain points</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-navigation-buttons">
+        <div>
+          Jump to each section: 
+        </div>
+        <ul>
+          <li><a href="#annotations">Interface Annotations</a></li>
+          <li><a href="#interviewquestions">User Interviews</a></li>
+          <li><a href="#empathymaps">Empathy Maps</a></li>
+          <li><a href="#storyboarding">User Storyboarding</a></li>
+        </ul>
+      </div>
+
+      <div id="annotations">
+        <h2>Annotating some of the key features of the interface:</h2>
+        <h3>These were initial observations based on my experiences, prior to testing this with users.
+          I did this as an exercise to predict what potential pain points may exist and how these may
+          mis(align) with actually interviewing and observing users.
+        </h3>
+        <img id="Interface_Annotation" alt="Annotations of Interface Interations" src="./assets/personas_storyboarding/Interface_Annotated.png"/>
+      </div>
+
+      <div id="interviewquestions">
+        <h2>After each interaction, I interviewed each user on their interaction with the self-check out station:</h2>
+        <h3>These interviews helped me map users actions to their greater intent with the interface,
+          a key skill when conducting user experience research.
+        </h3>
+        <h3>Across all interviews, a few themes emerged: unclear affordances, overloaded instructions, and mismatched user expectations.</h3>
+
+        <div class="circle-answers">
+
+          <div class="question-row">
+            <!-- Question 1 -->
+            <div class="question-block">
+              <h3>1. Have you used this checkout station before?</h3>
+              <ul>
+                <li>Some users were unaware of the self-checkout option or found it confusing due to prior word-of-mouth experiences.</li>
+                <li>Others had used it occasionally, preferring human interaction over automation.</li>
+              </ul>
+            </div>
+          
+            <!-- Question 2 -->
+            <div class="question-block">
+              <h3>2. If so, how often, and what has your previous experience been like?</h3>
+              <ul>
+                <li>Users who had used it before did so only when staff weren’t available.</li>
+                <li>Prior experience sometimes helped them anticipate the process (e.g., from observing librarians), but the interface still caused confusion.</li>
+              </ul>
+            </div>
+          
+            <!-- Question 3 -->
+            <div class="question-block">
+              <h3>3. If not, what did you expect the checkout process to involve?</h3>
+              <ul>
+                <li>Assumed it would involve scanning the book but did not expect needing to scan an ID first.</li>
+                <li>Lack of prior awareness of the self-checkout station contributed to initial confusion.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="question-row">
+              <!-- Question 4 -->
+            <div class="question-block">
+              <h3>4. Could you walk me through the checkout process?</h3>
+              <ul>
+                <li>Users followed expected steps but encountered issues with barcode placement, ID scanning, and machine responses.</li>
+                <li>The distinction between different components (screen vs. scanner) was unclear to some users.</li>
+              </ul>
+            </div>
+          
+            <!-- Question 5 -->
+            <div class="question-block">
+              <h3>5. Would you describe the checkout process as frictionless?</h3>
+              <ul>
+                <li>No—users encountered multiple points of confusion, especially with barcode placement and feedback cues.</li>
+                <li>Some experienced failed attempts before successfully checking out.</li>
+              </ul>
+            </div>
+          
+            <!-- Question 6 -->
+            <div class="question-block">
+              <h3>6. If not, in which part of the process did you experience that friction on what to do next?</h3>
+              <ul>
+                <li>The green light gave misleading feedback, making users think the checkout was complete when it wasn’t.</li>
+                <li>The number of instructional stickers caused information overload instead of clarity.</li>
+                <li>Uncertainty about whether the screen and scanner were part of the same system.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="question-row">
+              <!-- Question 7 -->
+            <div class="question-block">
+              <h3>7. Did the interface have all the available features you expected? Why or why not?</h3>
+              <ul>
+                <li>While it had all the necessary functions, users found it cluttered or counterintuitive.</li>
+                <li>Some instructions were helpful, but others (like excessive labels) contributed to confusion.</li>
+              </ul>
+            </div>
+          
+            <!-- Question 8 -->
+            <div class="question-block">
+              <h3>8. Do you think you could have completed the checkout process without the on-screen instructions or labels? Why or why not?</h3>
+              <ul>
+                <li>Some users thought they could have figured it out eventually, especially if they had prior exposure to librarians checking out books.</li>
+                <li>Others might have assumed the checkout was complete due to misleading visual cues.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="empathymaps">
+          <h2>Empathy Maps</h2>
+          <h3>To better synthesize what users were feeling at each step of the journey, I translated their insights into two representative personas.</h3>
+          <h3>
+            One of the key goals through this exercise was to summarize the distinct set of behavioral patterns regarding the use of interface,
+            and to really map out how the users interviewed represent some key archetypes across larger user groups.
+          </h3>
+          <div class="persona-map">
+            <img id="User_1_Persona" src="./assets/personas_storyboarding/User_1_Persona.png" alt="Persona 1" />
+          </div>
+        
+          <div class="persona-map">
+            <img id="User_2_Persona" src="./assets/personas_storyboarding/User_2_Persona.png" alt="Persona 2" />
+          </div>
+        </div>
+
+        <div id="storyboarding">
+          <h2>Storyboarding</h2>
+          <h3>To bring one persona’s journey to life, I illustrated their interaction from start to finish—highlighting pain points and opportunities for improvement.</h3>
+          <h3>The key guiding question here was what is the start-to-end of user's journey with this interface?</h3>
+          <img id="Storyboard" alt="Storyboard based on Persona" src="./assets/personas_storyboarding/Storyboard_Annotated.png"/>
+        </div>
+
+        <div class="highlight-box">
+          <h3 class="section-subhead">Final Reflections:</h3>
+          <ul>
+            <li>This process taught me that even the simplest interfaces, like scanning a book, involve invisible friction points.</li>
+            <li>This investigation piqued my interest in how digital interfaces couple with the physical experience of users.</li>
+            <li>In my future user experience research projects, I would like to focus on the frictions users face when handling interfaces with both digital and physical components.</li>
+          </ul>
+        </div>
+        
+        </div>
+
+        <div id="back-top-section">
+          <a href="#top-moving-banner">Back to Top</a>
+        </div>
+    </div>
+  </div>
+
+  </body>
+</html>
+

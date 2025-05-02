@@ -1,0 +1,518 @@
+a {
+  color: #5c8600; /* hyperlink color styling */
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* overflow-x: hidden; */
+}
+
+::selection {
+  background-color: #5c8600; 
+  color: #F9F77C;
+}
+
+.main-content,
+.issues-container,
+.key-takeaways-container {
+  max-width: 1300px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#project-summary {
+  background-color: #edf18d;
+  border-left: 5px solid #5c8600;
+  padding: 10px 20px;
+  margin: 10px auto 30px auto;
+  width: 90%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* ------------------- TOP MOVING BANNER ------------------- */
+#top-moving-banner {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  background: #5c8600;
+
+  display: flex;
+  align-items: center; 
+}
+
+.banner-texts {
+display: flex;
+align-items: center;
+gap: 61px;
+position: absolute;
+white-space: nowrap;
+animation: moveBanner 20s linear infinite;
+}
+
+/* Each greeting */
+.banner-texts span {
+font-family: 'Helvetica Neue', sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: #FFFFFF;
+display: inline-flex;
+align-items: center;
+height: 35px;
+}
+
+
+/* Animate it to move exactly half the distance */
+@keyframes moveBanner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ------------------- TOP MENU BAR ------------------- */
+
+#top-area-container {
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+#menu-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.main-menu-link {
+  text-decoration: none; 
+  color: inherit;        
+  display: inline-block;  
+}
+
+.main-menu-button {
+  width: 124px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.arrow {
+  position: relative;
+  width: 30px; 
+  height: 2px; 
+  background-color: black; 
+  transform: rotate(315deg);
+  margin-right: 8px; 
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -4px; 
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+}
+
+.menu-label {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-button:hover .arrow {
+  background-color: #5c8600; 
+}
+
+.main-menu-button:hover .arrow::after {
+  border-top-color: #5c8600; 
+  border-right-color: #5c8600;
+}
+
+.main-menu-button:hover .menu-label {
+  color: #5c8600; 
+  font-weight: 500; 
+}
+
+/* ------------------- TEXT STYLING ------------------- */
+
+h1 {
+  font-size: clamp(24px, 4vw, 42px);
+  line-height: 1.2;
+  color: black;
+  text-align: left;
+}
+
+h2 {
+  font-size: clamp(20px, 3.2vw, 32px);
+  line-height: 1.3;
+  color: black;
+  text-align: left;
+}
+
+h3 {
+  font-size: clamp(18px, 2.8vw, 26px);
+  line-height: 1.4;
+  color: black;
+  text-align: left;
+}
+
+h4 {
+  font-size: clamp(16px, 2.2vw, 22px);
+  line-height: 1.4;
+  color: #5c8600;
+  text-align: left;
+}
+
+
+/* ------------------- PAGE INTRO STYLTING - TOP SECTION CONTAINERS ------------------- */
+
+/* Title */
+h1 {
+  font-size: clamp(28px, 5vw, 48px);
+  text-align: left;
+  color: black;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+/* Project Summary box */
+#project-summary {
+  background-color: #edf18d;
+  border-left: 5px solid #5c8600;
+  padding: 10px 20px;
+  margin: 10px auto 30px auto;
+  width: 100%;
+  max-width: 1000px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Top Section Container */
+#top-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* Intro image */
+#page-intro img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Intro text */
+#intro-text {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#intro-text h3, 
+#intro-text h2 {
+  font-size: clamp(16px, 2.5vw, 20px);
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+
+/* ------------------- PAGE NAVIGATION BUTTONS ------------------- */
+
+#page-navigation-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+#page-navigation-buttons > div {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#page-navigation-buttons ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+#page-navigation-buttons li {
+  margin: 0;
+}
+
+#page-navigation-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #F9F77C; 
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 2px solid black;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#page-navigation-buttons a:hover {
+  background-color: #F9F77C;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+}
+
+#back-top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  margin: 30px;
+}
+
+#back-top-section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #F9F77C;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 2px solid black;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#back-top-section  a:hover {
+  background-color: #F9F77C;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+}
+
+/* ------------------- DESCRIPTION BOX STYLINGS ------------------- */
+
+/* Container to hold the three boxes side by side */
+.issues-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+  
+/* Each box styled as a square */
+.issue-box {
+  flex: 0 0 calc(33.333% - 20px);
+  background-color: #F9F77C;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  min-height: 250px; /* adjust as needed */
+}
+  
+.issue-box h3 {
+    text-align: center;
+    font-size: 25px;
+}
+  
+.issue-box ul {
+    list-style-type: disc;
+    margin-right: 10px;   
+    margin-left: 10px;
+    padding-left: 0;
+}
+
+/* ------------------- REFLECTION / TAKEAWAYS STYLING ------------------- */
+
+.key-takeaways-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Each box styled as a square */
+.takeaway-box {
+  flex: 0 0 calc(33.333% - 20px);
+  background-color: #F9F77C;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  aspect-ratio: 1 / 1;
+}
+
+.takeaway-box h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.takeaway-box ul {
+  list-style-type: disc;
+  margin-right: 10px;   
+  margin-left: 10px;
+  padding-left: 0;
+}
+
+/* ------------------- GENERAL WEBPAGE (from previous version) ------------------- */
+
+#redesignsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 0px;
+}
+
+#redesignsContainer h2 {
+  width: 100%;
+  text-align: left;
+  font-size: clamp(22px, 3vw, 36px);
+  margin-bottom: 0px;
+}
+
+.redesign-box {
+  width: 100%;
+  background-color: #F9F77C;
+  border: 1px solid #ccc;
+  padding: 25px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.redesign-box h3 {
+  font-size: clamp(20px, 3vw, 28px);
+  margin-top: 0;
+}
+
+.redesign-box h4 {
+  font-size: clamp(16px, 2.2vw, 20px);
+  color: #5c8600;
+  margin-bottom: 15px;
+}
+
+.redesign-box ul {
+  margin: 0 0 0 20px;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.redesign-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 20px auto 0 auto;
+  display: block;
+  background-color: white;
+}
+
+/* ------------------- GENERAL WEBPAGE (from previous version) ------------------- */
+
+#Pinterest_Annotated, #Apple_Annotated, #Duolingo_Annotated, #Keyboard_Interaction, #Mouse_Interaction,  
+#Keyboard_Interaction_Trade, #Mouse_Interaction_Trade,
+#Initial_State_Redesign_One, #Initial_State_Redesign_Two  {
+  width: 100%;
+  max-width: 1000px; 
+  height: auto; 
+  margin: 20px auto;
+  display: block;
+}
+
+#Keyboard_Interaction_Trade  {
+  width: 100%;
+  max-width: 1000px; 
+  height: auto; 
+  margin: 20px auto;
+  margin-bottom: 0px;
+  display: block;
+}
+
+#redesignOne, #redesignTwo {
+  flex: 1;
+  min-width: 300px;
+  padding: 0 40px; 
+  box-sizing: border-box; 
+}
+
+#interactionContainer, #redesignsContainer {
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+  align-items: flex-start; 
+}
+
+#mouseInteract, #mouseInteractTrade {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 40px; 
+}
+
+#keyInteract, #keyInteractTrade {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 40px; 
+}
+
+/* ---------- Highlight Boxes ---------- */
+.highlight-box {
+  background-color: #F9F77C;
+  border-left: 5px solid #5c8600;
+  padding: 20px 30px;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.highlight-box ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.highlight-box p {
+  margin: 0 0 10px 0;
+}

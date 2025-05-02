@@ -1,0 +1,396 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Studio</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styling/responsive_redesign.css" /> 
+  </head>
+
+
+  <!-- WEBSITE STRUCTURE -->
+  <body>
+    <div id="top-moving-banner">
+      <div class="banner-texts">
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        
+        <!-- DUPLICATE set -->
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+
+        <!-- DUPLICATE set -->
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+      </div>
+    </div>
+
+    <div id="top-area-container">
+      <div id="menu-items">
+        <a href="homepage.html" class="main-menu-link">
+          <div id="work-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">work</span>
+          </div>
+        </a>
+
+        <a href="about_me.html" class="main-menu-link">
+          <div id="play-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">play</span>
+          </div>
+        </a>
+
+        <a href="about_me.html" class="main-menu-link">
+          <div id="about-me-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">about</span>
+          </div>
+        </a>
+    </div>
+
+    <div class="main-content">
+
+      <div id="title">
+        <h1>Responsive Redesign</h1>
+      </div>
+      
+      <div class="intro-section">
+        <div id="project-summary" class="highlight-box">
+          <p><strong>Role:</strong> Web Designer, Front-end Developer</p>
+          <p><strong>Skills:</strong> HTML/CSS Architecture, High Fidelity Mock-Ups, Media Queries, Accessibility Integration</p>
+          <p><strong>Timeline:</strong> March - April 2025</p>
+        </div>
+      </div>
+      
+      <section class="intro-section">
+        <p class="intro-lead">
+          I approached this project with the question: <em>How can we make an aesthetic web experience actually usable—especially across device screens?</em>
+          I set out to redesign a website I love using UX research and front-end design principles to bridge accessibility with visual clarity.
+        </p>
+        <p class="intro-lead">
+          I focused on <a href="https://www.adk.de/en/">Akademie Der Kunste (AdK), Berlin's</a> website after struggling with its responsiveness on both laptop and mobile devices.
+          The webpage attempts to "squeeze" in a lot of information, that for the most case feels necessary but is hard to follow and clunky.
+          When examining the interface, I asked myself: <em>How can I balance improving accessibility while preserving visual style?</em>
+        </p>
+      </section>
+      
+      <!-- Goals and deeper context -->
+      <section class="intro-section">
+      
+        <p class="section-subhead">
+          My process breaks into three parts: first, I assess accessibility; second, aesthetics; and finally, I bridge both in my redesigned interface.
+        </p>
+      
+        <div class="goals-list highlight-box">
+          <p><strong>My goals in this project were to:</strong></p>
+          <ul>
+            <li>Use accessibility frameworks to identify key pain points</li>
+            <li>Create a visual brand guide building off AdK's identity</li>
+            <li>Balance trade-offs between aesthetic and accessible design</li>
+            <li>Enhance my high fidelity prototyping skills in Figma</li>
+            <li>Practice front-end development as a UX researcher</li>
+          </ul>
+        </div>
+      </section>
+      
+      
+
+      <div id="page-navigation-buttons">
+        <div>
+          Jump to each section: 
+        </div>
+        <ul>
+          <li><a href="#web-usability-analysis-container">Usability Analysis</a></li>
+          <li><a href="#webAIM-WAVE-discussion-container">Accessibility Analysis</a></li>
+          <li><a href="#visual-design-style-guide-container">Visual Design Guide</a></li>
+          <li><a href="#figma-designs-container">Hi-Fi Mock-Up</a></li>
+          <li><a href="#present-redesign-container">Webpage Design</a></li>
+        </ul>
+      </div>
+
+      <div id="existing-website-photos-container-title">
+        <h2>Observing AdK's Current Webpage</h2>
+        <h3>Before diving into redesign, I wanted to carefully document the current interface and assess how it performs across devices.
+        </h3>
+      </div>
+      <!-- Pictures of Existing Website Design -->
+      <div id="existing-website-photos-container">
+        <div class="photo-box">
+          <figure>
+            <figcaption>Responsiveness to Changing Window Size</figcaption>
+            <img id="gif-screen" alt="Recording of the AdK Webpage and its lack of responsiveness with changing window size" src="assets/responsive_redesign/web_recording.gif"/>
+          </figure>
+        </div>
+        <div class="photo-box">
+          <figure>
+            <figcaption>Full Screen on Laptop</figcaption>
+            <img id="full-screen-screenshot" alt="Screenshot of existing webpage on laptop screen" src="./assets/responsive_redesign/Full_Screen.png"/>
+          </figure>
+        </div>
+        <div class="photo-box">
+          <figure>
+            <figcaption>Half Screen on Laptop</figcaption>
+            <img id="half-screen-screenshot" alt="Screenshot of existing webpage on half screen" src="./assets/responsive_redesign/Non_Responsive_1.png"/>
+          </figure>
+        </div>
+        <div class="photo-box">
+          <figure>
+            <figcaption>Smaller Window Sizes</figcaption>
+            <img id="small-screen-screenshot" alt="Screenshot of existing webpage on smaller window/screen" src="./assets/responsive_redesign/non_Responsive_2.png"/>
+          </figure>
+        </div>
+      </div>
+
+      <div id="web-usability-analysis-container">
+        <h2>Usability Analysis: AdK’s Current Interface</h2>
+        <h3>To guide my redesign, I evaluated the site’s accessibility through three key usability heuristics: efficiency, learnability, and memorability.</h3>
+      
+        <div class="issues-container">
+          
+          <div class="issue-box">
+            <h3>Efficiency</h3>
+            <ul>
+              <li>Menus and links load quickly, but it’s unclear which elements are clickable.</li>
+              <li>Interactive elements like the image gallery feel more aesthetic than functional.</li>
+              <li>Redundant navigation paths create unnecessary steps to reach key pages.</li>
+              <li>No keyboard shortcuts or autofill — missed opportunities for assistive efficiency.</li>
+            </ul>
+          </div>
+      
+          <div class="issue-box">
+            <h3>Learnability</h3>
+            <ul>
+              <li>Visual hierarchy is unclear; lack of contrast and dense information makes scanning difficult.</li>
+              <li>Event listings and the sidebar calendar feel disconnected, causing cognitive overload.</li>
+              <li>Few visual cues (like buttons or icons) guide new users through the site structure.</li>
+              <li>The consistent design language is elegant, but sacrifices clarity for minimalism.</li>
+            </ul>
+          </div>
+      
+          <div class="issue-box">
+            <h3>Memorability</h3>
+            <ul>
+              <li>The basic layout is familiar (navbar, search), but multiple nav menus create confusion.</li>
+              <li>Navigation back to the homepage is only possible via an unlabeled logo — not intuitive.</li>
+              <li>Responsive behavior is limited; mobile users lack clear navigation cues (e.g., hamburger menu).</li>
+              <li>Navigation labels are inconsistent, with multiple elements linking to the same content.</li>
+              <li>The site’s minimal branding helps highlight artwork but lacks UX affordances.</li>
+            </ul>
+          </div>
+      
+        </div>
+      </div>
+      
+
+      <!-- WebAIM WAVE to detect possible accessibility problems -->
+      <div id="webAIM-WAVE-discussion-container">
+        <h2>WebAIM WAVE Accessibility Evaluation</h2>
+        <h3>My analysis in efficiency, learnability, and memorability proved to be a valuable exercise to articulate my many thoughts on the design. 
+          Though I felt this approach lacked structure and still left some area of subjectivity to play a role in the analysis.
+          AdK is a public arts institution that should be inclusive, to different types of accessibility needs beyond responsive to device types.
+        </h3>
+        <h3>To test the accessiblity of the webpage, I used the industry standard tool of
+          <a href="https://wave.webaim.org/">WAVE's web accessiblity evaluation tool (WAVE)</a>
+          and this exercise provided these insights:
+        </h3>
+
+        <div class="issues-container">
+          <div class="waive-box">
+            <img id="webAIM-WAVE-screenshot" alt="Screenshot of WebAIM WAVE accessibility test" src="./assets/responsive_redesign/WEB_results.png"/>
+          </div>
+          <div class="waive-box">
+            <h3>Errors in the alt text for labelling</h3>
+            <p>
+              <ul>
+                Image alternative text is not present.
+              </ul>
+              <ul>
+                Image without alternative text results in an empty link.
+              </ul>
+              <ul>
+                Missing form label – form controls are missing some corresponding labels 
+              </ul>
+              <ul>
+                I agree with the problems detected, though these are hard to catch at first without screen reader use.
+              </ul>
+              </p>
+          </div>
+          <div class="waive-box">
+            <h3>Text is very small</h3>
+            <p>
+              <ul>
+                Text which is very small is difficult to read, particularly for those with low vision. 
+              </ul>
+              <ul>
+                Specifically highlights which text is sized 10 pixels or smaller.
+              </ul>
+              <ul>
+              This particularly is of large concern on this webpage as there is a lot of information on the opening page. 
+              This results in really small labelling and text overcrowding in certain areas.
+              </ul> 
+            </p>
+          </div>
+          <div class="waive-box">
+            <h3>Low contrast between text & background colors</h3>
+            <p>
+              <ul>
+                Adequate contrast of text is necessary for all users, especially users with low vision.
+              </ul>
+              <ul>
+                The particular problem is that smaller text (18px and below) requires more contrast between the foreground (text) 
+                and background color (mainly white on the homepage). 
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Design Style Guide -->
+      <div id="visual-design-style-guide-container">
+        <h2>Visual Design Guide of Redesign</h2>
+        <h3>To start my redesign process, I examined AdK's existing interface, but now from a purely aesthetic perspective.</h3>
+
+        <div class="highlight-box">
+          <p class="section-subhead">I noticed the following elements:</p>
+          <ul>
+            <li>The liveliness and bright colors of AdK's print work (e.g., posters, brochures) did not translate to their website</li>
+            <li>The use of their signature font in their logo was under-used on their website</li>
+            <li>The website lacked personal brand and character compared to some of my other favorite museums of that caliber:
+              <ul>
+                <li><a href="https://www.hkw.de/en/">House of World Cultures, Berlin</a></li>
+                <li><a href="https://jsfoundation.art/">Julia Stoschek Foundation, Berlin</a></li>
+                <li><a href="https://www.saatchigallery.com/">Saatchi Gallery, London</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <img id="visual-design-style-guide" alt="Screenshot of visual style guide generated on Figma" src="./assets/responsive_redesign/Visual_Guide.png"/>
+      </div>
+
+      <!-- Figma Redesign Mockups -->
+      <div id="figma-designs-container">
+        <h2>Figma High Fidelity Mockups</h2>
+        <h3>The visual style guide, helped me understand the color scheme and requirements of my webpage, 
+          but I wanted to further ideate on how to integrate my design observations into my high fidelity prototype.
+        </h3>
+
+        <section class="inspiration-section">
+          <div class="highlight-box">
+            <p class="section-subhead">
+              For me, this meant seeking out inspirational websites from similar organizations—ones that effectively balance heavy visual design with dense information.
+              I found two sources of inspiration that do this well:
+              <strong>Slanted Magazine</strong> and <strong>Schauspielhaus Frankfurt</strong>.
+
+              <h3 class="section-subhead">Key Takeaways:</h3>
+              <ul>
+                <li>Use color blocks or symbols to visually distinguish content</li>
+                <li>Integrate vertically scrollable containers to manage density</li>
+                <li>Leverage bold typography and vibrant color while keeping layout flat and intuitive</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+
+        <div id="existing-website-photos-container">
+          <div class="photo-box">
+            <figure>
+              <figcaption>Slanted Magazine <a href="https://www.slanted.de/">(more here)</a> </figcaption>
+              <img id="gif-screen" alt="Recording of Slanted Magazine's Webpage and the moving components, especially vertically staked scrolling" src="assets/responsive_redesign/inspo_slantedmag.gif"/>
+            </figure>
+          </div>
+          <div class="photo-box">
+            <figure>
+              <figcaption>Schauspielhaus Frankfurt <a href="https://www.schauspielfrankfurt.de/">(more here)</a> </figcaption>
+              <img id="gif-screen" alt="Recording of Schauspielhaus Frankfurt's Webpage and the moving components, especially vertically staked scrolling" src="assets/responsive_redesign/inspo_schaufrnk.gif"/>
+            </figure>
+          </div>
+        </div>
+
+        <h3>This led me to designing my first set of high fidelity mock-ups on Figma...</h3>
+        <h3>Each screen size version, I made annotations on potential Flexbox solutions and/or ideas
+          as I think about how my design could translate into front-end development.
+          You can find my <a href="https://www.figma.com/design/N0H3mAeshd2uBbcxY19lYk/CS1300-HW4?node-id=0-1&t=O1y9O1YuJhB02DPq-1">Figma High Fidelity Mock Ups here</a>,
+          that include these annotations on key CSS media queries and flexible box layouts needed.
+        </h3>
+
+        <div id="redesign-container">
+          <div class="redesign-box">
+            <figure>
+              <figcaption>Large Computer (~3840x2160px)</figcaption>
+              <img id="laptop-figma-redesign" alt="Redesign of webpage for large computer screen size" src="./assets/responsive_redesign/Laptop_Redesign.png"/>
+            </figure>
+          </div>
+          <div class="redesign-box">
+            <figure>
+              <figcaption>Tablet Screen (~768x1024px)</figcaption>
+              <img id="tablet-figma-redesign" alt="Redesign of webpage for tablet screen size" src="./assets/responsive_redesign/Redesign_Tablet.png"/>
+            </figure>
+          </div>
+          <div class="redesign-box">
+            <figure>
+              <figcaption>Mobile Screen (~375x667px)</figcaption>
+              <img id="mobile-figma-redesign" alt="Redesign of webpage for mobile device (phone) screen size" src="./assets/responsive_redesign/Redesign_Mobile.png"/>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Redesign Presentation -->
+      <div id="present-redesign-container">
+        <h2>Turning Mockups into a Live Responsive Site</h2>
+        <h3>Finally, I wanted to challenge myself by coding a responsive version of my Figma design using pure HTML/CSS,
+          to really understand how CSS media queries and flexible box (flexbox) layout work in practice.
+          <a href="https://naemi22.github.io/hw4-actual-redesign/">Playaround with the deployed Responsive Redesign on GitHub!</a>
+        </h3>
+
+        <img id="gif-redesign" alt="Recording of the AdK Webpage and its lack of responsiveness with changing window size" src="assets/responsive_redesign/recording_redesign.gif"/>
+      </div>
+
+      <div class="highlight-box">
+        <p class="section-subhead">
+          <h3 class="section-subhead">Key Takeaways:</h3>
+          <ul>
+            <li>My design is not fully responsive & that's ok! Designing for responsiveness is hard and takes a lot of care and thoughtfullness</li>
+            <li>Responsiveness does not only mean adapting to window resizing, but including aria-labelling throughout HTML structures</li>
+            <li>Balancing aesthetic choices and accessibility is difficult, and requires evaluating design trade-offs</li>
+            <li>Defining user base in accessibility web design is critical: most users visiting AdK are looking for aesthetic experiences, so I tailored my design to that user base. 
+              But further research should be done to this point
+            </li>
+            <li>Running real user tests and receiving feedback from different user groups, would prompt me to reiterate on this first design</li>
+          </ul>
+        </p>
+      </div>
+
+      <div id="back-top-section">
+        <a href="#top-moving-banner">Back to Top</a>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,291 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Studio</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styling/csci1952b_project.css" /> 
+  </head>
+
+
+  <!-- WEBSITE STRUCTURE -->
+  <body>
+    <div id="top-moving-banner">
+      <div class="banner-texts">
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        
+        <!-- DUPLICATE set -->
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+
+        <!-- DUPLICATE set -->
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+      </div>
+    </div>
+
+    <div id="top-area-container">
+      <div id="menu-items">
+        <a href="homepage.html" class="main-menu-link">
+          <div id="work-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">work</span>
+          </div>
+        </a>
+
+        <a href="about_me.html" class="main-menu-link">
+          <div id="play-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">play</span>
+          </div>
+        </a>
+
+        <a href="about_me.html" class="main-menu-link">
+          <div id="about-me-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">about</span>
+          </div>
+        </a>
+    </div>
+
+    <div id="main-content">
+
+      <div id="title">
+        <h1>Ethical UI Design & Pinterest's Body Type Toggle</h1>
+      </div>
+
+      <div id="sub-heading">
+        <h2>The Digital Femme Experience, “Body Positivity” and the Choice Paradox</h2>
+      </div>
+
+      <div class="intro-section">
+        <div id="project-summary" class="highlight-box">
+          <p><strong>Role:</strong> UX Researcher, Web Inclusivity Researcher, Ethical Computing Writer</p>
+          <p><strong>Skills:</strong>  User Studies, Expert Interviewing, Comparative UI Analysis, Dark Pattern Identification</p>
+          <p><strong>Timeline:</strong> March - May 2024</p>
+        </div>
+      </div>
+
+      <section class="intro-section">
+        <p class="intro-lead">
+          In early 2024, Pinterest launched a body type toggle—a feature allowing users to filter women’s fashion search results by body type. 
+          Promoted as a move toward inclusion and representation, the toggle sparked my curiosity as both a UX researcher and digital feminist scholar: 
+          <em>Does this feature truly empower users—or just look like it does?</em>
+        </p>
+        <p class="intro-lead">
+          This case study explores that question by combining UX research, interviews of both users and experts, and thinking about ethical design preserving users' autonomy while providing users tools
+          to see themselves in the tech they interact with.
+          Through user testing and empathy mapping, I uncovered key tensions between Pinterest’s intent and actual user experience.
+          The project concludes with Figma mock-ups rethinking what inclusive design might look like in this context, with open-ended annotations of how dfferent designs may serve different user groups.
+        </p>
+      </section>
+
+      <div id="academic-paper">
+        <a href="https://drive.google.com/file/d/1YpU1OxWptanq2B-N5Z6voV2CQnSb3JYZ/view?usp=sharing">See Full Academic Paper Here</a> 
+      </div>
+
+      <div id="page-navigation-buttons">
+        <div>
+          Jump to each section: 
+        </div>
+        <ul>
+          <li><a href="#expert-interview-container">Expert Interview</a></li>
+          <li><a href="#ux-study-container">UX Study</a></li>
+          <li><a href="#empathy-maps-container">Empathy Maps</a></li>
+          <li><a href="#ui-mockup-container">UI Mock-Up</a></li>
+          <li><a href="#reflections-container">Reflection</a></li>
+        </ul>
+      </div>
+
+      <div id="more-background-info">
+        <h2>A Timeline of This Feature's Release</h2>
+        <h3>First I wanted to understand, <em>what pushed Pinterest to launch this toggle in the first place?</em>
+          I remember as a young user in my teenage years, the platform wasn't necessarily the most body-friendly or diverse.
+          <em>Did the backlash from media finally change Pinterest's strategy and how?</em>
+        </h3>
+
+        <img id="pinterest-timeline" alt="Timeline of the Body Type Technology for Pinterest" src="./assets/csci1952b_project/Pinterest_Timeline.png"/>
+      </div>
+
+      <div id="expert-interview-container">
+        <h2>Expert Interview: Feminist Digital Humanities Scholar</h2>
+        <h3>I chose to interview a digitial humanities scholar, focused on intersectional feminism,
+          as I felt Pinterest in a very femme-leaning platform and digital experience that 
+          many female and/or queer friends in Gen Z grew up with in their teenage years.
+          <em>How does the femme nature of the platform affect such design decisions related to body image and self-perception on the internet?</em>
+        </h3>
+
+        <div class="highlight-box">
+          <h3 class="section-subhead">
+            <a href="https://pembroke.brown.edu/people/helis-sikk">Dr. Helis Sikk,</a> 
+            Lecturer in Gender and Sexuality Studies at Brown University
+          </h3>
+          <ul>
+            <li>Pinterest is a femme-centered platform that thrives on emotional labor and curating visual pleasure, but this makes its users especially vulnerable to commodification.</li>
+            <li>The body type toggle can reinforce user surveillance — offering personalization while enabling more targeted advertising based on users' self-identified body types.</li>
+            <li>This kind of "choice" design is deeply shaped by neoliberal values — placing responsibility on the user while the platform profits from their data.</li>
+            <li>The toggle might alleviate some harms of “thinspo” culture, but also forces users to analyze and label their bodies, which can intensify body dysmorphia or dysphoria.</li>
+            <li>Sikk suggests evaluating the feature through the 
+              <a href="https://www.upress.umn.edu/9781517906115/bodies-of-information/">MEALS framework (Material, Embodiment, Affect, Labor, Situatedness)</a> 
+               to understand whether it truly supports user wellbeing.</li>
+          </ul>
+        </div>
+
+      <div id="ux-study-container">
+        <h2>User Experience (UX) Study</h2>
+
+        <div id="ux-study-summary">
+          <h3>
+            <em>Goal:</em> To understand how users perceive Pinterest’s body type toggle, I conducted a UX survey with 57 respondents, focusing on body image, platform engagement, and reactions to the new feature. 
+            The goal was to assess whether the toggle felt empowering or agency-centered, especially among Pinterest's core demographic: women and Gen Z.
+          </h3>
+          <h3>
+            <em>Responses:</em> helped identify tensions in the toggle’s implementation and shaped my design revisions. 
+            While the survey didn’t deeply address every responsible computing lens (e.g., nudging or consent models), the feedback gathered still provided critical user insights that informed persona creation and future mockups.
+          </h3>
+        </div>
+
+        <div id="ux-survey-questions">
+          <h3>UX Survey Questions:</h3>
+          <div class="question-grid">
+            <div class="question-box">1. Which gender identity do you identify most with? (multiple choice – Female, Male, Non-Binary, Other: )</div>
+            <div class="question-box">2. Please select your age group: (multiple choice – Under 18, 18-24, 25 to 29, 30 to 34, 35 to 39, 40 to 44, 45 to 49, 50 to 54, 55 to 59, over 60)</div>
+            <div class="question-box">3. When did you start using Pinterest? Please provide an approximate year. (numerical response)</div>
+            <div class="question-box">4. Why have you continued using Pinterest? OR Why did you stop using Pinterest as much?</div>
+            <div class="question-box">5. How many Pinterest boards do you approximately have? (multiple choice – None, 1 to 2, 3 to 5, 6 to 9, 9+)</div>
+            <div class="question-box">6. What categories do you commonly search for on Pinterest? (e.g. clothing, art, recipes, etc...)</div>
+            <div class="question-box">7. What has your experience been with Pinterest, do you feel represented/included by the platform?</div>
+            <div class="question-box">8. How would you describe your relationship with your body and social media like Pinterest and Tumblr, etc…?</div>
+            <div class="question-box">9. To what extent do you agree with the following statements regarding this new feature?</div>
+            <div class="question-box">10. If you had to give a number for the body types ranges, what would it be?</div>
+            <div class="question-box">11. How does this feature make you feel? Do you think it actually promotes “body positivity and/or neutrality”?</div>
+            <div class="question-box">12. Any other thoughts, feedback, and/or criticisms.</div>
+          </div>
+        </div>        
+
+      </div>
+
+      <h2>Empathy Mapping Users</h2>
+
+      <div id="empathy-maps-container">
+        <div class="photo-box">
+          <figure>
+            <figcaption>The Social Scroller: 
+              <em>“I’m here for my friends, not for endless inspiration boards.”</em>
+            </figcaption>
+            <img id="persona_1" alt="Persona 1" src="./assets/csci1952b_project/Persona1.jpg"/>
+          </figure>
+        </div>
+        <div class="photo-box">
+          <figure>
+            <figcaption>The Trend-Conscious Ally:
+              <em>“Pinterest works for me—but I know it doesn’t work for everyone.”</em>
+            </figcaption>
+            <img id="persona_2" alt="Persona 2" src="./assets/csci1952b_project/Persona2.jpg"/>
+          </figure>
+        </div>
+        <div class="photo-box">
+          <figure>
+            <figcaption>The Skeptical Scroller:
+              <em>“I don’t feel seen, but I keep scrolling anyway.”</em>
+            </figcaption>
+            <img id="persona_3" alt="Persona 3" src="./assets/csci1952b_project/Persona3.jpg"/>
+          </figure>
+        </div>
+        <div class="photo-box">
+          <figure>
+            <figcaption>The Reflective Power User:
+              <em>“After years of pinning, I want a feed that reflects who I actually am.”</em>
+            </figcaption>
+            <img id="persona_4" alt="Persona 4" src="./assets/csci1952b_project/Persona4.jpg"/>
+          </figure>
+        </div>
+      </div>
+
+
+      <h2>User Interface (UI) Mock Up with Annotations</h2>
+      <h3>
+        This mock-up series explores four possible implementations of Pinterest’s body type toggle, each shaped by user interviews, empathy mapping, and survey data. 
+        Rather than proposing a single redesign, I aimed to surface the <strong>trade-offs between agency, inclusivity, and personalization</strong>—and how different approaches may better serve different Gen Z femme users. 
+        These annotated mock-ups are not final answers, but provocations for ethical reflection: 
+        <em>How might we design inclusive UI without flattening individuality? How do we balance empowerment with platform-driven nudging?</em>
+      </h3>
+      <div id="ui-mockup-container">
+
+        <div class="mockup-box">
+          <figure>
+            <figcaption>Current Body Types Toggle</figcaption>
+            <img id="annotations_1" alt="Annotations and Explanations of the Existing Toggle Solution of 4 Body Type Categories by Pinterest" src="./assets/csci1952b_project/current_toggle.jpg"/>
+          </figure>
+        </div>
+        <div class="mockup-box">
+          <figure>
+            <figcaption>Sliding Body Type Toggle</figcaption>
+            <img id="annotations_2" alt="Annotations and Explanations of Using a Sliding Body Type Toggle" src="./assets/csci1952b_project/CS1952B_P2.png"/>
+          </figure>
+        </div>
+        <div class="mockup-box">
+          <figure>
+            <figcaption>Wider Body Type Ranges in Toggle</figcaption>
+            <img id="annotations_3" alt="Annotations and Explanations of Users Selecting Between the Number of Body Type Categories in the Toggle" src="./assets/csci1952b_project/CS1952B_P3.png"/>
+          </figure>
+        </div>
+        <div class="mockup-box">
+          <figure>
+            <figcaption>Upload your own images/inspiration Toggle</figcaption>
+            <img id="annotations_4"alt="Annotations and Explanations of Users Uploading their Own Photos to make a Range Suited to Themselves" src="./assets/csci1952b_project/CS1952B_P4.png"/>
+          </figure>
+        </div>
+
+      </div>
+
+      <div id="reflections-container">
+
+        <div class="highlight-box">
+          <h3 class="section-subhead">Key Takeaways:</h3>
+          <ul>
+            <li>Ethical UI design requires balancing agency, empowerment, and transparency—each design explored tried to support user autonomy while minimizing platform overreach.</li>
+            <li>Giving users more control (like uploading photos or adjusting sliders) can increase empowerment, but also introduces risks around labor, privacy, and surveillance.</li>
+            <li>No single toggle design works for everyone—supporting different user goals requires offering customizable options, without asking users to carry the emotional or technical burden.</li>
+            <li>The toggle must be more than a symbolic gesture: its algorithm, consent model, and feedback loop all shape how inclusive and ethical it truly is.</li>
+            <li>Responsible UI must prioritize user wellbeing over engagement metrics—especially on femme-centered platforms where body image is at stake.</li>
+            <li>I hope to take these guiding principles I pursue UX Research in realms of social media like Pinterest.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="academic-paper">
+        <a href="https://drive.google.com/file/d/1YpU1OxWptanq2B-N5Z6voV2CQnSb3JYZ/view?usp=sharing">See Full Academic Paper Here</a> 
+      </div>
+
+      <div id="back-top-section">
+        <a href="#top-moving-banner">Back to Top</a>
+      </div>
+    </div>
+  </body>
+</html>

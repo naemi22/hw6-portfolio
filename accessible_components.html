@@ -1,0 +1,338 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Studio</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styling/accessible_components.css" /> 
+  </head>
+
+
+  <!-- WEBSITE STRUCTURE -->
+  <body>
+    <div id="top-moving-banner">
+      <div class="banner-texts">
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        
+        <!-- DUPLICATE set -->
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+
+        <!-- DUPLICATE set -->
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+        <span>welcome!</span>
+        <span>willkommen!</span>
+        <span>bienvenue!</span>
+        <span>привет!</span>
+      </div>
+    </div>
+
+    <div id="top-area-container">
+      <div id="menu-items">
+        <a href="homepage.html" class="main-menu-link">
+          <div id="work-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">work</span>
+          </div>
+        </a>
+
+        <a href="about_me.html" class="main-menu-link">
+          <div id="play-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">play</span>
+          </div>
+        </a>
+
+        <a href="about_me.html" class="main-menu-link">
+          <div id="about-me-button-container" class="main-menu-button">
+            <div class="arrow"></div>
+            <span class="menu-label">about</span>
+          </div>
+        </a>
+    </div>
+
+    <div class="main-content">
+
+      <h1>Accessible Components: Radio Buttons</h1>
+      
+        <div class="intro-section">
+          <div id="project-summary" class="highlight-box">
+            <p><strong>Role:</strong> UX Researcher, Web Accessibility Researcher, UI Designer</p>
+            <p><strong>Skills:</strong> Interface Annotation, Keyboard & Screen Reader Accessibility</p>
+            <p><strong>Timeline:</strong> February 2025</p>
+          </div>
+        </div>
+
+      <div id="top-section">
+        <div id="page-intro">
+          <img id="introductory-radio-description" alt="Radio Icon site introduction" src="./assets/accessible_components/Radio_Intro.png"/>
+        </div>
+      
+        <div id="intro-text">
+          <h3>
+             While traditionally visualized as circles, modern interfaces of radio buttons reimagine them with icons, tags, and color blocks.
+             This study compares how <a href="https://gestalt.pinterest.systems/web/radiogroup">Pinterest</a>,
+             <a href="https://codepen.io/v81d/pen/xxBVZax">Duolingo</a>, and 
+             <a href="https://developer.apple.com/design/human-interface-guidelines/toggles#Radio-buttons">Apple</a>
+             tailor radio buttons for unique interactions—and how those choices impact accessibility.
+          </h3>
+          <h2>
+            I am interested in analyzing <em>accesibility differences</em> across mouse touchpad, keyboard, and mobile users.
+            This will help me become a better UX Researcher, understanding how designing for one type accessibility might conflict another.
+          </h2>
+        </div>
+      </div>
+  
+      <div id="page-navigation-buttons">
+        <div>
+          Jump to each section: 
+        </div>
+        <ul>
+          <li><a href="#pinSection">Pinterest</a></li>
+          <li><a href="#appleSection">Apple Settings</a></li>
+          <li><a href="#duoSection">Duolingo</a></li>
+          <li><a href="#stateModels">State Models of Duolingo's Buttons</a></li>
+          <li><a href="#redesignsContainer">Re-Designs</a></li>
+        </ul>
+      </div>
+  
+      <div id="pinSection">
+        <!-- Pinterest content -->
+        <h2>Pinterest: <em>The Use of Original Radio Buttons</em></h2>
+        <h3></h3>
+        <h4>
+          Pinterest rarely uses radio buttons. I analyze a single instance to understand its role in the interface and why other components are favored.
+        </h4>
+    
+        <img id="Pinterest_Annotated" alt="Pinterest Radio Buttons Annotated" src="./assets/accessible_components/Pinterest_Annotated.png"/>
+
+        <div class="issues-container">
+          <!-- Mouse / Touchpad -->
+          <div class="issue-box">
+            <h3>Mouse / Touchpad</h3>
+            <ul>
+              <li>Entire label is clickable — improves ease of use.</li>
+              <li>“Apply” button is far from selection — slows interaction.</li>
+            </ul>
+          </div>
+        
+          <!-- Keyboard -->
+          <div class="issue-box">
+            <h3>Keyboard</h3>
+            <ul>
+              <li>Cannot select or navigate radio buttons without mouse.</li>
+              <li>Enter key doesn’t submit selection; Esc gives no feedback.</li>
+              <li>Keyboard flow is unintuitive and incomplete.</li>
+            </ul>
+          </div>
+        
+          <!-- Mobile / Touch -->
+          <div class="issue-box">
+            <h3>Mobile / Touch</h3>
+            <ul>
+              <li>Clickable area includes label — improves usability.</li>
+              <li>Selection applies instantly — limits toggling control.</li>
+            </ul>
+          </div>
+        </div>
+        
+  
+      <div id="appleSection">
+        <!-- Apple Settings content -->
+        <h2>Apple Settings: <em>Challenging Radio Button Design Conventions with Color</em></h2>    
+        <h4>
+          Apple’s desktop settings challenge conventional radio button design by integrating previews, color buttons, and multiple visual states.
+          There are multiple design iterations including previews of what pressing each radio button option will result in,
+          as well as making the button itself correspond to the value users are selecting (color buttons). </h4>
+        <img id="Apple_Annotated" alt="Apple Settings Radio Buttons Annotated" src="./assets/accessible_components/Apple_Settings_Annotated.png"/>
+    
+        <div class="issues-container">
+          <!-- Mouse / Touchpad -->
+          <div class="issue-box">
+            <h3>Mouse / Touchpad</h3>
+            <ul>
+              <li>Default selection reinforces mutual exclusivity and learnability.</li>
+              <li>Color-aligned buttons and previews improve intuitiveness.</li>
+              <li>Classic circular radios are too small — hurts usability.</li>
+            </ul>
+          </div>
+        
+          <!-- Keyboard -->
+          <div class="issue-box">
+            <h3>Keyboard</h3>
+            <ul>
+              <li>Keyboard navigation is mostly unavailable — users can’t access radio options.</li>
+              <li>Major accessibility gap for non-mouse users.</li>
+            </ul>
+          </div>
+        
+          <!-- Mobile / Touch -->
+          <div class="issue-box">
+            <h3>Mobile / Touch</h3>
+            <ul>
+              <li>No mobile equivalent for appearance settings — inconsistent experience.</li>
+              <li>Where used, large tap targets and previews improve usability.</li>
+            </ul>
+          </div>
+        </div>        
+      
+      <div id="duoSection">
+        <!-- Duolingo content -->
+        <h2>Duolingo: <em>Numbering and Tagging Radio Containers for Accessibility</em></h2>
+    
+        <h4>Duolingo uses many different forms of radio buttons, including those with easy-to-understand icons as tag options,
+          as well as numbering the available options to users. In this case I have decided to analyze one form of their many radio button
+          designs where the buttons themselves are numbers, and how this affects learnability and accessibility. </h4>
+        <img id="Duolingo_Annotated" alt="Duolingo Radio Buttons Annotated" src="./assets/accessible_components/Duolingo_Annotated.png"/>
+
+        <div class="issues-container">
+          <!-- Mouse / Touchpad -->
+          <div class="issue-box">
+            <h3>Mouse / Touchpad</h3>
+            <ul>
+              <li>No default selection encourages active choice.</li>
+              <li>Hover target includes full button area — improves accessibility.</li>
+              <li>Cannot return to unselected state — limits flexibility.</li>
+            </ul>
+          </div>
+        
+          <!-- Keyboard -->
+          <div class="issue-box">
+            <h3>Keyboard</h3>
+            <ul>
+              <li>Users can select with 1/2/3 keys — improves access.</li>
+              <li>No way to reset or preview — reduces control and feedback.</li>
+              <li>Shortcuts are not visible — low discoverability.</li>
+            </ul>
+          </div>
+        
+          <!-- Mobile / Touch -->
+          <div class="issue-box">
+            <h3>Mobile / Touch</h3>
+            <ul>
+              <li>Tap immediately applies filter — limits option exploration.</li>
+              <li>Visual feedback (e.g., bolding) inconsistent with desktop.</li>
+            </ul>
+          </div>
+        </div>        
+  
+      <div id="stateModels">
+        <!-- State models and trade-offs -->
+        <h2>Duolingo: <em>State Models of the Interaction</em></h2>
+        <h4>
+          To better understand user behavior, I mapped out how users currently interact with Duolingo’s radio button-style tags. 
+          I chose Duolingo because — unlike Pinterest or Apple — its design supports keyboard interaction fairly well, offering numeric key shortcuts (1, 2, 3) for selection.
+        </h4>
+        <h4>
+          However, limitations remain: there’s no way to deselect once a choice is made, and discoverability of these shortcuts is low. 
+          This model highlights the strengths and friction points users encounter across different input methods.
+        </h4>
+        <div id="interactionContainer">
+          <div id="mouseInteract">
+            <h3>Mouse Interaction State Model</h3>
+            <img id="Mouse_Interaction" alt="Mouse Radio Buttons Annotated" src="./assets/accessible_components/Mouse_Diagram.png"/>
+          </div>
+          
+          <div id="keyInteract">
+            <h3>Keyboard Interaction State Model</h3>
+            <img id="Keyboard_Interaction" alt="Keyboard Radio Buttons Annotated" src="./assets/accessible_components/Keyboard_Diagram.png"/>
+          </div>
+        </div>
+
+        <h2>Duolingo: <em>State Models with Intentional Trade-Offs</em></h2>
+        <h4>
+          I then redesigned the interaction with specific accessibility trade-offs in mind, to understand accessibility is not "one fits all" in solutions.
+          Balancing key needs across user groups is critical when designing for large user bases of social media.
+        </h4>
+        <h4>
+          My revised model prioritizes screen reader and keyboard users: adding an Esc key function to clear selections and improved focus handling. 
+          However, these changes come at a cost to mouse users. For example, clicking away from the selection resets the choice — a less fluid experience for repeat mouse interactions.
+        </h4>
+
+        <div id="interactionContainer">
+          <div id="mouseInteractTrade">
+            <h3>Mouse Interaction Tradeoff Model</h3>
+            <img id="Mouse_Interaction_Trade" alt="Mouse Radio Buttons Annotated" src="./assets/accessible_components/Radio_Mouse_Redesign.png"/>
+          </div>
+    
+          <div id="keyInteractTrade">
+            <h3>Keyboard Interaction Tradeoff Model</h3>
+            <img id="Keyboard_Interaction_Trade" alt="Keyboard Radio Buttons Annotated" src="./assets/accessible_components/Radio_Key_Redesign.png"/>
+          </div>
+        </div>
+      </div>
+  
+      <div id="redesignsContainer">
+        <h2>Redesigning a Component</h2>
+      
+        <div class="redesign-box">
+          <h3>Duolingo: Changing the Initial State of the Buttons</h3>
+          <h4>
+            This redesign of the initial state helps users understand that a selection is required with radio buttons.
+          </h4>
+          <ul>
+            <li>The design signals that these options/tags are mutually exclusive.</li>
+            <li>Having one preselected option may help first-time users understand selection is required.</li>
+            <li>Rotating buttons on highlight improves learnability and memorability.</li>
+            <li>Keyboard shortcuts could be displayed visually to guide navigation.</li>
+          </ul>
+        </div>
+        <img class="redesign-img" alt="Initial State Redesign of Duolingo" src="./assets/accessible_components/Duolingo_Annotated.png"/>
+      
+        <div class="redesign-box">
+          <h3>Pinterest: esigning an Explicit Clickable Target</h3>
+          <h4>
+            This redesign enhances efficiency and learnability by eliminating unnecessary interactions.
+          </h4>
+          <ul>
+            <li>Removed the unnecessary “Clear All” button in favor of default “All Pins.”</li>
+            <li>“All Pins” acts as a reset, simplifying the user flow.</li>
+            <li>Border clearly shows clickable area, enhancing usability.</li>
+            <li>Keyboard navigation hints can increase accessibility.</li>
+          </ul>
+        </div>
+        <img class="redesign-img" alt="Additional State Redesign of Pinterest" src="./assets/accessible_components/Pinterest_Annotated.png"/>
+      </div>          
+  
+      <div id="reflection">
+        <!-- Key takeaways -->
+
+        <div class="highlight-box">
+          <h3 class="section-subhead">Key Takeaways:</h3>
+          <ul>
+            <li>Designing for accessibility means making trade-offs—what benefits keyboard users may hinder mouse interactions.</li>
+            <li>Visual minimalism, like Apple’s design, can come at the cost of accessibility if not paired with robust keyboard support.</li>
+            <li>Most interfaces I tested lacked full keyboard navigation—prompting me to prioritize it in my redesigns (e.g., Esc to clear, Enter to submit).</li>
+            <li>Expanding click targets and linking labels directly improves usability for both touch and mouse users.</li>
+            <li>Accessible design is not just about adding features—it's about rethinking interaction flows for diverse users.</li>
+          </ul>
+        </div>
+
+      <div id="back-top-section">
+        <a href="#top-moving-banner">Back to Top</a>
+      </div>
+    </div> <!-- END .main-content -->
+  </body>
+</html>
