@@ -331,8 +331,8 @@ h2 {
 /* ------------------- BOXED IMAGES OF CURRENT INTERFACE ------------------- */
 #existing-website-photos-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Adds space between grid items */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
   width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -372,15 +372,14 @@ h2 {
 }
 
 .photo-box figcaption a {
-  color: #edf18d; /* your signature dark blue */
+  color: #edf18d; 
   font-weight: bold;
-  text-decoration: none; /* optional: removes underline */
+  text-decoration: none; 
 }
 
 .photo-box figcaption a:hover {
-  text-decoration: underline; /* optional: add underline on hover */
+  text-decoration: underline;
 }
-
 
 /* ------------------- BOXED IMAGES OF REDESIGN FROM FIGMA ------------------- */
 /* Container to hold the three boxes side by side */
@@ -425,7 +424,6 @@ h2 {
 }
 
 /* ------------------- BOXED DESCRIPTIONS OF CURRENT PROBLEMS ------------------- */
-/* Container to hold the three boxes side by side */
 .issues-container {
   display: flex;
   justify-content: space-between;
@@ -560,9 +558,9 @@ h2 {
 
 #gif-redesign {
   display: block;
-  margin: 20px auto; /* centers it */
-  width: 80%;         /* or try 600px if you want a fixed size */
-  max-width: 700px;   /* optional limit to prevent it from growing too big */
-  height: auto;       /* keeps aspect ratio */
-  border: 2px solid #ccc; /* optional: gives it a frame */
+  margin: 20px auto; 
+  width: 80%;         
+  max-width: 700px; 
+  height: auto;      
+  border: 2px solid #ccc;
 }

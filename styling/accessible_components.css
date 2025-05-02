@@ -65,7 +65,6 @@ align-items: center;
 height: 35px;
 }
 
-
 /* Animate it to move exactly half the distance */
 @keyframes moveBanner {
   0% {
@@ -343,7 +342,7 @@ h1 {
   margin: 10px;
   box-sizing: border-box;
   padding: 15px;
-  min-height: 250px; /* adjust as needed */
+  min-height: 250px; 
 }
   
 .issue-box h3 {
@@ -368,7 +367,6 @@ h1 {
   margin: 0 auto;
 }
 
-/* Each box styled as a square */
 .takeaway-box {
   flex: 0 0 calc(33.333% - 20px);
   background-color: #F9F77C;

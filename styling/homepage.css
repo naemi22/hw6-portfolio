@@ -62,7 +62,6 @@ body {
   animation: moveBanner 20s linear infinite;
 }
 
-/* Each greeting */
 .banner-texts span {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 400;
@@ -147,7 +146,7 @@ body {
   }
 
   .main-menu-button {
-    width: 100%; /* full width for better tapping */
+    width: 100%; 
     justify-content: center;
   }
 
@@ -355,7 +354,7 @@ body {
 #projects-title {
   width: 100%;
   max-width: 1200px; 
-  padding: 10px 20px; /* Match #about-intro-items */
+  padding: 10px 20px;
   padding-bottom: 0px;
   margin: 0px auto 10px auto;
   box-sizing: border-box;
@@ -373,7 +372,7 @@ body {
 @media (max-width: 600px) {
   #projects-title {
     padding: 0 20px;
-    margin: 0px auto 10px auto; /* reduce top and bottom margin */
+    margin: 0px auto 10px auto;
   }
 
   #projects-title h2 {

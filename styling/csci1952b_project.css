@@ -280,17 +280,17 @@ h2 {
 h3 {
   text-align: left;
   padding-left: 80px;
-  margin: 20px 50px 10px 0; /* top: 20px, right: 40px, bottom: 10px, left: 0 */
+  margin: 20px 50px 10px 0; 
 }
 
 
 /* ------------------- TIMELINE ------------------- */
 #pinterest-timeline {
   width: 100%;
-  max-width: 700px; /* or another value based on your layout */
+  max-width: 700px;
   height: auto;
   display: block;
-  margin: 20px auto; /* centers the image and adds spacing */
+  margin: 20px auto;
 }
 
 /* ---------- Highlight Boxes ---------- */
