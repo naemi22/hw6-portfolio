@@ -198,7 +198,7 @@ height: 35px;
 }
 
 .menu-label {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 25px;
   line-height: 38px;
@@ -497,6 +497,16 @@ h2 {
   display: block; 
   margin: 0 auto;
 }
+
+
+#laptop-figma-redesign-annotations {
+  /* width: 86%; */
+  max-height: 950px;
+  border: 3px solid #0047AB;
+  display: block; 
+  margin: 0 auto;
+}
+
 
 #figma-link-container{
   padding-top: 20px;
